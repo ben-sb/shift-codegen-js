@@ -14,6 +14,11 @@
  * limitations under the License.
  */
 
+/**
+ * This file has been modified to prevent minifying of floats.
+ * @ben-sb
+ */
+
 const { idContinueLargeRegex, idContinueBool } = require('./unicode');
 
 function isIdentifierPartES6(char) {
