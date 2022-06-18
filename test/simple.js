@@ -216,8 +216,8 @@ describe('Code generator', () => {
       test2('({3:0})', '({0b11:0})');
       test2('({0:0})', '({0.:0})');
       test2('({0:0})', '({.0:0})');
-      test2('({.1:0})', '({0.1:0})');
-      testModule('({.1:0})');
+      test2('({0.1:0})', '({0.1:0})');
+      testModule('({0.1:0})');
       testModule('({"+0":b})');
       testModule('({"+1":b})');
       testModule('({"-0":b})');
@@ -689,8 +689,8 @@ describe('Code generator', () => {
       testModule('0x38D7EA4C68001.valueOf()');
       test2('15e5', '1500000');
       test2('155e3', '155000');
-      testModule('.1');
-      test2('.1', '0.1');
+      testModule('0.1');
+      test2('0.1', '0.1');
       // floats
       testModule('1.1.valueOf()');
       testModule('15..valueOf()');
