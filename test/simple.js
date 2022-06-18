@@ -14,6 +14,11 @@
  * limitations under the License.
  */
 
+/**
+ * This file has been modified to prevent minifying of floats.
+ * @ben-sb
+ */
+
 'use strict';
 
 let fs = require('fs');
